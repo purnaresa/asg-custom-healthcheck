@@ -1,4 +1,4 @@
-module asg-check
+module custom-healthcheck
 
 go 1.16
 
