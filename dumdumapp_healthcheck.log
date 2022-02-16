@@ -1,11 +1,39 @@
-time="2022-02-03T00:35:49+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:35:51+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:35:53+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:35:55+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:48:23+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:48:25+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:48:27+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:48:29+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:48:31+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:48:33+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
-time="2022-02-03T00:48:35+07:00" level=error msg=healthcheck status="Get \"http://localhost:8080/healthcheck\": dial tcp 127.0.0.1:8080: connect: connection refused"
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:19:41+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:19:51+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:20:01+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:20:12+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:20:22+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:20:32+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:20:42+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:20:52+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:21:02+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:21:12+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:21:23+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:21:33+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:21:43+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:21:53+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:22:03+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:22:13+07:00"}
+{"level":"error","msg":"healthcheck","status":"Get \"http://13.212.212.76:8080/healthcheck\": dial tcp 13.212.212.76:8080: i/o timeout","time":"2022-02-16T14:22:53+07:00","unhealthy counter":1}
+{"level":"error","msg":"healthcheck","status":"Get \"http://13.212.212.76:8080/healthcheck\": dial tcp 13.212.212.76:8080: i/o timeout","time":"2022-02-16T14:23:33+07:00","unhealthy counter":2}
+{"level":"error","msg":"healthcheck","status":"Get \"http://13.212.212.76:8080/healthcheck\": dial tcp 13.212.212.76:8080: i/o timeout","time":"2022-02-16T14:24:13+07:00","unhealthy counter":3}
+{"level":"info","msg":"setting instance to unhealthy","time":"2022-02-16T14:24:13+07:00"}
+{"level":"error","msg":"operation error ec2imds: GetInstanceIdentityDocument, canceled, context deadline exceeded","time":"2022-02-16T14:24:18+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:24:35+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:24:45+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:24:55+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:25:05+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:25:15+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:25:25+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:25:36+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:25:46+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:25:56+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:26:06+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:26:16+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:26:26+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:26:36+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:26:46+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:26:56+07:00"}
+{"healthy counter":1,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:27:06+07:00"}
+{"healthy counter":2,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:27:16+07:00"}
+{"healthy counter":3,"level":"debug","msg":"healthcheck","time":"2022-02-16T14:27:26+07:00"}
