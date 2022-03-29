@@ -1,0 +1,12 @@
+[Unit]
+Description=custom-healthcheck
+After=multi-user.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/opt/custom-healthcheck
+ExecStart=/opt/custom-healthcheck/custom-healthcheck
+
+[Install]
+WantedBy=multi-user.target

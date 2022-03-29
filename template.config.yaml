@@ -1,9 +1,0 @@
-REGION: ap-southeast-1
-SQS_ENDPOINT: https://sqs.someregion.amazonaws.com/accountid/queuename
-APPNAME: appname
-APPURL: http://1.2.3.4:8080/healthcheck
-HEALTHY_THRESHOLD: 3
-UNHEALTHY_THRESHOLD: 3
-INTERVAL: 10
-LOG_LEVEL: DEBUG
-LOG_FILE_WRITE: false

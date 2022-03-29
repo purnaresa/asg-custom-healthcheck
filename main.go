@@ -34,7 +34,8 @@ var (
 func getConfig() {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
-	viper.AddConfigPath(".")
+	viper.AddConfigPath("config")
+	viper.AddConfigPath("/etc/custom-healthcheck/")
 
 	errConfig := viper.ReadInConfig()
 	if errConfig != nil {
@@ -85,6 +86,7 @@ func main() {
 	//
 
 	for {
+		log.Info("custom healthcheck running")
 		resp, err := http.Get(appUrl)
 		if err != nil {
 			unhealthyCounter++
@@ -95,7 +97,7 @@ func main() {
 				"unhealthy counter": unhealthyCounter,
 			}).Error("healthcheck")
 
-			if unhealthyCounter == unhealthyThreshold {
+			if unhealthyCounter >= unhealthyThreshold {
 				setUnhealthy()
 			}
 		} else {
