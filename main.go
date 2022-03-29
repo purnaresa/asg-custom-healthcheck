@@ -35,7 +35,7 @@ func getConfig() {
 	viper.SetConfigName("config")
 	viper.SetConfigType("yaml")
 	viper.AddConfigPath("config")
-	viper.AddConfigPath("/etc/custom-healthcheck/")
+	viper.AddConfigPath("/etc/custom-healthcheck/config")
 
 	errConfig := viper.ReadInConfig()
 	if errConfig != nil {
