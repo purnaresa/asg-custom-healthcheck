@@ -1,0 +1,10 @@
+#!/bin/bash
+wget https://github.com/purnaresa/custom-healthcheck/releases/download/beta/custom-healthcheck -O custom-healthcheckapp
+chmod +x custom-healthcheckapp
+sudo mkdir /opt/custom-healthcheck
+sudo mv custom-healthcheckapp /opt/custom-healthcheck
+
+wget https://github.com/purnaresa/custom-healthcheck/releases/download/beta/custom-healthcheck.service -O custom-healthcheck.service
+sudo mv custom-healthcheck.service /etc/systemd/system/
+sudo systemctl start custom-healthcheck.service
+sudo systemctl enable custom-healthcheck.service

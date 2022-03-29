@@ -6,7 +6,7 @@ After=multi-user.target
 User=root
 Group=root
 WorkingDirectory=/opt/custom-healthcheck
-ExecStart=/opt/custom-healthcheck/custom-healthcheck
+ExecStart=/opt/custom-healthcheck/custom-healthcheckapp
 
 [Install]
 WantedBy=multi-user.target

@@ -72,6 +72,7 @@ func init() {
 }
 
 func main() {
+	log.Info("custom healthcheck running")
 	// set log file
 	if logFileWrite == true {
 		fileOk, err := os.OpenFile(fmt.Sprintf("%s_healthcheck.log", appName), os.O_APPEND|os.O_CREATE|os.O_RDWR, 0666)
@@ -86,7 +87,6 @@ func main() {
 	//
 
 	for {
-		log.Info("custom healthcheck running")
 		resp, err := http.Get(appUrl)
 		if err != nil {
 			unhealthyCounter++
@@ -108,7 +108,7 @@ func main() {
 				log.WithField("healthy counter", healthyCounter).
 					Debug("healthcheck")
 
-				if healthyCounter == healthyThreshold {
+				if healthyCounter >= healthyThreshold {
 					setHealthy()
 				}
 			}
